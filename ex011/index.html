@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png"> <!-- tem que ser acima mesmo!!! srcset não funciona ctrl espaço-->
+        <source media="(min-width: 760px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!--audio src="midia/WhatsApp-Ptt-2022-03-29-at-22.09.09.mp3" controls autoplay></audio>
+    TIPOS DE ARQUIVO + COMPATÍVEIS: MP3 WAV OGG-->
+    <audio preload="metadata" autoplay controls loop>
+        <!--if-->
+        <source src="midia/WhatsApp-Ptt-2022-03-29-at-22.09.09.mp3" type="audio/mpeg">
+        <!--else if-->
+        <source src="midia/WhatsApp-Ptt-2022-03-29-at-22.09.09.ogg" type="audio/ogg">
+        <!--else if-->
+        <source src="midia/WhatsApp-Ptt-2022-03-29-at-22.09.09.wav" type="audio/wav"> <!--EVITAR WAV, É PESADO-->
+        <!--else-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/WhatsApp-Ptt-2022-03-29-at-22.09.09.mp3">Clique aqui</a> para baixar o arquivo mp3.</p>
+    </audio>
+</body>
+</html>

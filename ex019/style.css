@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to bottom,#5EF56E, #84ee8f);
+    font: normal normal normal 1em Arial, Helvetica, sans-serif; /*style variant weight size family respectivamente*/
+    text-align: justify;
+}
+
+h1 {
+    color: rgb(4, 32, 12);
+    text-align: center;
+}
+
+h1#principal {
+    font: normal normal bolder 3em Arial, Helvetica, sans-serif;
+    color: blue;
+}
+
+h2 {
+    color: rgb(23, 121, 23);
+    text-align: center;
+}
+
+.basic {
+    color: green;
+}
+/*não precisa por elemento, basta .class*/
+.intermediate {
+    color: rgb(163, 163, 19);
+}
+
+.advanced {
+    color: red;
+}
+
+h1.destaque {
+    background-color: #61FF6E;
+    color: cyan;
+}
