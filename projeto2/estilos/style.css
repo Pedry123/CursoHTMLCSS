@@ -28,7 +28,7 @@ header > h1 {
     font: small-caps normal 10em var(--fonte0);
 }
 
-header p > a{
+header p > a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
     color: white;
@@ -59,10 +59,28 @@ section#img1 {
 }
 
 section#img1 > pre > p {
-    background-color: rgba(182, 128, 36, 0.938);
+    background-color: rgba(97, 88, 73, 0.514);
     width: 560px;
-    padding: 0px 30px 30px 30px;
+    padding: 0px 7px 7px 7px;
+
 }
 p{
     margin: 0%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
 }
